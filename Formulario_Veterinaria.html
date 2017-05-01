@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./style/formu.css">
+	<title>Formulario veterinaria</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="form__top">
+			<h2>Registro Veterinaria</h2>
+			<p>Para registrar la veterinaria debe haberse <br> registrado el encargado(veterinario) previamente</p>
+		</div>		
+		<form class="form__reg" action="procregveterinaria.php" method="POST">
+			<input class="input" name="nombre" type="text" placeholder="Nombre" required autofocus>
+            <input class="input" name="telefono" type="text" placeholder="Telefono" required>
+            <input class="input" name="direccion" type="text" placeholder="Dirección" required>
+            <input class="input" name="localidad" type="text" placeholder="localidad" required>
+            <input class="input" name="pais" type="text" placeholder="pais" required>
+            <input class="input" name="senasag" type="text" placeholder="Reg Sanitario" required>
+            <input class="input" name="id_enc" type="text" placeholder="idEncargado" required>
+            <div class="btn__form">
+            	<input class="btn__submit" type="submit" value="REGISTRAR">
+            	<input class="btn__reset" type="reset" value="LIMPIAR">	
+            </div>
+		</form>
+	</div>
+	
+</body>
+</html>

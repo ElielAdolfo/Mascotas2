@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./style/formu.css">
+	<title>Formulario dueño</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="form__top">
+			<h2>Registro Dueño</h2>
+		</div>		
+		<form class="form__reg" action="procesregdueno.php" method="POST" >
+			<input class="input" type="text" name="nombre" placeholder="  Nombre" required autofocus>
+			<input class="input" type="text" name="paterno" placeholder="Paterno" required>
+			<input class="input" type="text" name="materno" placeholder="Materno" required>
+			<input class="input" type="text" name="ci" placeholder="CI" required>
+			<input class="input" type="text" name="contrasena" placeholder="contraseña" required>
+			<label>Fecha de nacimiento:</label>
+			<input  class="input" type="date" name="fecha">
+            <input class="input" type="email" name="email"placeholder="Email" required>
+            <input class="input" type="text" name="telefono" placeholder="Telefono Fijo" >
+            <input class="input" type="text" name="celular" placeholder="celular" required>
+            <input class="input" type="text" name="direccion" placeholder="Dirección" required>
+            <input class="input" type="text" name="zona" placeholder="zona" required>
+            <input class="input" type="text" name="localidad"placeholder="localidad" required>
+            <input class="input" type="text" name="pais" placeholder="pais" required>
+            <label type ="seleccion" class="input">Ocupacion: </label>
+			<select name="profesion">
+				<option value="informatico" >Informatico</option>
+				<option value="aqrquitecto">Arquitecto</option>
+				<option value="Psicologo">Psicologo</option>
+				<option value="Matemtico">Matemtico</option>
+				<option value="Estadistico">Estadistico</option>
+				<option value="Quimico">Quimico</option>
+				<option value="Fisico">Fisico</option>
+				<option value="Ingeniero">Ingeniero</option>
+				<option value="Profesor">Profesor</option>
+				<option value="Comerciante">Comerciante</option>
+				<option value="Abogado">Abogado</option>
+				<option value="Biologo">Biologo</option>
+				<option value="Contador">Contador</option>
+				<option value="Auditor">Auditor</option>
+				<option value="Otro" >Otro</option>
+			</select>
+			<label type ="text" class="input">Tipo de Vivienda: </label>
+			<select name="tipovivienda">
+				<option value="casa">Casa</option>
+				<option value="3">Cabaña</option>
+				<option value="4">Alojamiento</option>
+				<option value="5">Apartamento</option>
+			</select>
+			<br>
+            <div class="btn__form">
+            	<input class="btn__submit" type="submit" value="REGISTRAR">
+            	<input class="btn__reset" type="reset" value="LIMPIAR">	
+            </div>
+		</form>
+	</div>
+	
+</body>
+</html>

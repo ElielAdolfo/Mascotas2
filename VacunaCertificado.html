@@ -1,0 +1,62 @@
+<!doctype>
+<html>
+<head>
+	<title>Certificado Veterinarios</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
+
+	<script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="jspdf.js"></script>
+
+	<script type="text/javascript" src="jspdf.plugin.addimage.js"></script>
+
+	<script type="text/javascript" src="jspdf.plugin.standard_fonts_metrics.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.split_text_to_size.js"></script>
+	<script type="text/javascript" src="jspdf.plugin.from_html.js"></script>
+
+</head>
+
+<body>
+<iframe frameborder="0" width="1000" height="600"></iframe>
+<script>
+$(document).ready(function() {
+var doc = new jsPDF();
+doc.setFontSize(20);
+doc.text(60, 20, "COLEGIO NACIONAL DE MEDICOS VETERINARIOS DE BOLIVIA");
+doc.text(58, 30, "COLEGIO DEPARTAMENTAL DE MEDICOS VETERINARIOS LA PAZ");
+doc.setFontSize(15);
+doc.text(50,40,"El suscrito medico veterinario Dr.:");
+doc.text(20,50,"Matricula Nro:");
+doc.text(20,60,"De propiedad de:");
+doc.text(20,70,"Calle:");
+doc.setFontSize(20);
+doc.text(80,80,"INFORMACION");
+doc.setFontSize(18);
+doc.text(20,90,"DEL ANIMAL");
+doc.setFontSize(15);
+doc.text(20,100,"Especie:");
+doc.text(20,110,"Raza:");
+doc.text(20,120,"Sexo:");
+doc.text(20,130,"Nombre:");
+doc.text(20,140,"Color:");
+doc.text(20,150,"Edad:");
+doc.text(50,160,"El animal debera ser reubicado el:");
+doc.text(20,170,"Lugar y fecha de vacunacion:");
+doc.setFontSize(18);
+doc.text(110,90,"DE LA VACUNA");
+doc.setFontSize(15);
+doc.text(110,100,"Contra:");
+doc.text(110,120,"Laboratorio:");
+doc.text(110,130,"Serie:");
+doc.text(110,140,"Procedente:");
+doc.text(110,150,"Expiracion:");
+var string = doc.output('datauristring');
+
+$('iframe').attr('src', string);
+
+});
+</script>
+
+</body>
+</html>

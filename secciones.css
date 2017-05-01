@@ -1,0 +1,54 @@
+
+h1,h2,h3,h4,h5,h6{
+	text-transform: uppercase;
+	color:#444;
+	font-family: rale;
+	letter-spacing: 1px;
+}
+h3{
+	padding-top: 20px;
+	font-size: 20px;
+	font-weight: normal;
+}
+h4{
+	margin-top: 15px;
+	font-size: 15px;
+}
+h5{
+	font-family: rale;
+	line-height: 1.5;
+	font-weight: normal;
+	padding: 10px 0;
+	font-size: 12px;
+}
+p{
+	color: #666;
+	font-family: rale;
+	font-size: 15px;
+}
+.wap{
+	width: 90%;
+	margin: auto;
+}
+.bienvenidos{
+	margin-top: 50px;
+	text-align: center;
+}
+.contenedor-columnas{
+	width: 100%;
+	margin: auto;
+	margin-bottom: 50px;
+}
+.columnde3{
+	width: 33.333%;
+	float: left;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	margin: auto;
+}
+.columnde3 img{
+	width: 100%
+}
+.alinea{
+	padding-top: 65px;
+}

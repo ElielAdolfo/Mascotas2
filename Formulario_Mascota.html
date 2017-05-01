@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/reset.css">
+	
+	<link rel="stylesheet" href="./style/formu.css">
+	<title>Formulario Mascota</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="form__top">
+			<h2>Registro Mascota</h2>
+			<p>Nota: para registrar su mascota debe haber registrado  <br>al propietario anteriormente</p>
+		</div>		
+		<form class="form__reg" action="progregmas.php" method="POST"enctype="multipart/form-data">
+			<input class="input" type="text" name="propietario"placeholder="ID propietario" required autofocus>
+			<input class="input" type="text" name="nombre" placeholder="Nombre" required>
+			<label type ="text" class="input">Edad (años)</label>
+			<select name="edad">
+						<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="11">16</option>
+				<option value="12">17</option>
+				<option value="13">18</option>
+				<option value="14">19</option>
+				<option value="15">20</option>
+			
+			</select>
+			<input class="input" type="text" name="procedencia"  placeholder="procedencia" required>
+			<label class="input">Color:</label>
+			<input type="color" name="color"><br><br>
+			<textarea class="input" type="text" name="observaciones" id="desc" rows="2" cols="10" placeholder="Observaciones"></textarea>
+			<label type ="text" class="input">Raza</label>
+			<select name="raza">
+				<option value="chihuahua">chihuahua</option>
+				<option value="pastor aleman">pastor aleman</option>
+				<option value="bulldog">bulldog</option>
+				<option value="chapi">chapi</option>
+				<option value="dalmata">dalmata</option>
+				<option value="mestizo">mestizo</option>
+		
+			</select>
+			<p class="input">Sexo</p>
+			<label for="m">MACHO</label>
+			<input  id="m"type="radio" value="macho" name="sex"checked >
+			<label for="h">HEMBRA</label>
+			<input  id="h" type="radio" value="hembra" name="sex">
+			<label class="input">Esterilizado:</label>
+			<label for="si">SI</label>
+			<input  id="si"type="radio" value="si" name="est"checked >
+			<label for="no">NO</label>
+			<input  id="no"type="radio" value="no" name="est"checked >
+            <input class="input" type="text" name="tamano" placeholder="tamaño(cm)" required>
+            <input class="input" type="text" name="peso"  placeholder="peso (kg)" required>
+            <label>Foto:</label>
+			<input type="file" class="input"name="imagen" REQUIRED />
+            <div class="btn__form">
+            	<input class="btn__submit" type="submit" value="REGISTRAR">
+            	<input class="btn__reset" type="reset" value="LIMPIAR">	
+            </div>
+		</form>
+	</div>
+	
+</body>
+</html>

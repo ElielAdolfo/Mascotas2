@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./style/formu.css">
+	<title>Formulario Vacunas</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="form__top">
+			<h2>Registro Vacuna</h2>
+			<p>Para registrar una vacuna la mascota debe haber <br> sido registrada previamente</p>
+		</div>		
+		<form class="form__reg" action="procregvacuna.php" method="POST" enctype="multipart/form-data">
+			<input class="input" name="idMascota" type="text" placeholder="idMascota" required>
+			<input class="input" name="idProducto" type="text" placeholder="idProducto" required>
+			<input class="input" name="lote" type="text" placeholder="lote de producto" required autofocus>
+			<input class="input" name="nombre"type="text" placeholder=" Nombre vacuna" required autofocus>
+            <label>Fecha de Vencimiento</label>
+            <input class="input" name="fechven" type="date" placeholder="fecha" required>
+            <input class="input" name="marca" type="text" placeholder="marca" required>
+            <input class="input" name="detalles" type="text" placeholder="detalles" required>
+            <label>Fecha de Vacunacion</label>
+            <input class="input" name="fechvac" type="date" placeholder="fecha" required>
+             <label>Fecha de próxima Vacunacion</label>
+            <input class="input" name="fechprox" type="date" placeholder="fecha" required>
+            <label>Foto etiqueta:</label>
+            <input type="file" class="input"name="imagen" REQUIRED placeholder="nombre..."/>
+            <div class="btn__form">
+            	<input class="btn__submit" type="submit" value="REGISTRAR">
+            	<input class="btn__reset" type="reset" value="LIMPIAR">	
+            </div>
+		</form>
+	</div>
+	
+</body>
+</html>

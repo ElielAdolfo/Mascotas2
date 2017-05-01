@@ -1,0 +1,65 @@
+
+.fondo{
+	background: url(imagenes/registro.jpg);
+	background-position: center;
+	
+}
+.letrasform{
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	color: #FF5733;
+	font-size: 50px;
+
+}
+.etexts{
+
+	padding: 10px;
+	font-size: 20px;
+	margin-left: 15px;
+	margin-right: 35px;
+	margin-bottom: 35px;
+}
+form{
+	text-align: center;
+
+	padding: 30px;
+}
+input[type="submit"],input[type="reset"]{
+
+	background: linear-gradient(#FFDA63,#FFB940);
+	border: =0;
+	color: brown;
+	opacity: 0.8;
+	cursor: pointer;
+	margin-left: 50px;
+	font-size: 20px;
+
+
+}
+
+.last{
+	padding: 10px;
+	font-size: 20px;
+	margin-left: 15px;
+	text-align: left;
+	margin-bottom: 20px;
+
+}
+
+header{
+	height: 200px;
+}
+h1,h2{
+	padding-top: 50px;
+	text-align: center;
+	color: #444;
+	
+}
+
+section{
+	background: url(imagenes/veterinaria.jpg);
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}

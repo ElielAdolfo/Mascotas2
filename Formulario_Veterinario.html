@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./style/formu.css">
+	<title>Formulario veterinario</title>
+</head>
+<body>
+
+	<div class="container">
+		<div class="form__top">
+			<h2>Registro Veterinario</h2>
+		</div>		
+		<form class="form__reg" action="procregveterinario.php" method="POST">
+			<input class="input" name="nombre"type="text" placeholder="  Nombre" required autofocus>
+			<input class="input" name="paterno" type="text" placeholder="Paterno" required>
+			<input class="input" name="materno"type="text" placeholder="Materno" required>
+			<input class="input" name="CI" type="text" placeholder="CI" required>
+			<input class="input" name="contrasena" type="text" placeholder="contraseña" required>
+			<label>Fecha de nacimiento:</label>
+			<input  class="input" type="date" name="fecha">
+            <input class="input" name="email" type="email" placeholder="Email" required>
+            <input class="input" name="telefono" type="text" placeholder="Telefono Fijo" >
+            <input class="input" name="celular" type="text" placeholder="celular" required>
+  			<input class="input" name="matricula" type="text" placeholder="matrícula" required>
+  			<input class="input" name="especialidad" type="text" placeholder="especialidad" required>
+            <div class="btn__form">
+            	<input class="btn__submit" type="submit" value="REGISTRAR">
+            	<input class="btn__reset" type="reset" value="LIMPIAR">	
+            </div>
+		</form>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Registro</title>
+	<link rel="stylesheet" href="forms.css">
+
+</head>
+<body >
+	<header class="fondo">
+		
+		<div >
+			
+			<p class="letrasform">REGISTRO</p>
+		</div>
+	</header>
+	
+	<section>
+		<h1>FORMULARIO DE INSCRIPCION DE MASCOTAS</h1>
+	<form name="formMascota" method="post" action="registrar.php">
+		<h2>Datos de la mascota</h2>
+		<input type="text" onFocus=borrar_texto() name="nombre" placeholder="nombre" class="etexts"/>
+		
+		<input type="text" name="edad" placeholder="edad" class="etexts"/>
+		<br>
+		<input type="text"  name="peso" placeholder="peso" class="etexts"/>
+		
+		<input type="text" name="color" placeholder="color" class="etexts"/>
+		<br>
+		<input type="text" name="obs" placeholder="observaciones" class="etexts"/>
+	
+		<input type="text" name="raza" placeholder="raza" class="etexts"/>
+
+		<br>
+
+		<input type="text" name="sexo" placeholder="sexo" class="etexts"/>
+
+		<input type="text" name="tam" placeholder="tamaño" class="etexts"/>
+		<br>
+
+		<h2>Datos del propietario</h2>
+		<input type="text"  name="nomProp" placeholder="nombres"class="etexts"/>
+		
+		<input type="text"  name="ApPat" placeholder="Apellido Paterno" class="etexts"/>
+		<br>
+		<input type="text" name="ApMat" placeholder="Apellido Materno" class="etexts"/>
+		
+		<input type="text"  name="CI" placeholder="CI" class="etexts"/>
+		<br>
+		<input type="text"  name="email" placeholder="email"class="etexts"/>
+		
+		<input type="text"  name="tfijo" placeholder="telefono fijo" class="etexts"/>
+
+		<br>
+
+		<input type="text" name="celular" placeholder="celular"class="etexts"/>
+		
+		<input type="text" name="ocup" placeholder="ocupacion" class="etexts"/>
+
+		<br>
+
+		<input type="text" name="zona" placeholder="zona"class="etexts"/>
+		
+		<input type="text" name="tipV" placeholder="tipo Vivienda" class="etexts"/>
+		
+		<br>
+
+		<input type="text" name="NroViv" placeholder="Nro Vivienda" class="last"/>
+
+
+		
+		<input type="submit" name="submit" value="Registrar" class="boton"/>
+		<br>
+		<input type="reset" value="Limpiar" class="boton"/>
+	</form>	
+</section>
+</body>
+</html>
